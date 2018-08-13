@@ -21,10 +21,10 @@ const publicPath = path.join(__dirname, '../client/public');
 app.use(express.static(publicPath));
 app.use(bodyParser.json());
 
-//CREATE
 app.post(`/api/images/file`, (req, response) => {
   const src = req.body.src;
   const analysisChoice = req.body.analysisChoice;
+  //TODO: need to sort out how to submit files produced by the html form
   params[`images_file`] = src;
   if(analysisChoice === `classify`){
     visualRecognition.classify(params, (err, res) => {

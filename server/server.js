@@ -24,7 +24,7 @@ app.use(bodyParser.json());
 app.post(`/api/images/file`, (req, response) => {
   const src = req.body.src;
   const analysisChoice = req.body.analysisChoice;
-  //TODO: need to sort out how to submit files produced by the html form
+  //TODO: need to sort out how to submit files produced by the html form to fs.createReadStream();
   params[`images_file`] = src;
   if(analysisChoice === `classify`){
     visualRecognition.classify(params, (err, res) => {

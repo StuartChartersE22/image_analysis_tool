@@ -31,7 +31,6 @@ app.post(`/api/images/file`, (req, response) => {
       if (err)
         console.error(err);
       else
-        console.log(JSON.stringify(res, null, 2));
         response.json(res);
     });
   }else if (analysisChoice === `face-recognition`) {
@@ -39,7 +38,6 @@ app.post(`/api/images/file`, (req, response) => {
       if (err)
         console.error(err);
       else
-        console.log(JSON.stringify(res, null, 2));
         response.json(res);
     });
   };
@@ -54,7 +52,6 @@ app.post(`/api/images/url`, (req, response) => {
       if (err)
         console.error(err);
       else
-        console.log(JSON.stringify(res, null, 2));
         response.json(res);
     });
   }else if (analysisChoice === `face-recognition`) {
@@ -62,7 +59,6 @@ app.post(`/api/images/url`, (req, response) => {
       if (err)
         console.error(err);
       else
-        console.log(JSON.stringify(res, null, 2));
         response.json(res);
     });
   };

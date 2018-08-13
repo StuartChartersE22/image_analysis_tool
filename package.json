@@ -1,0 +1,26 @@
+{
+  "name": "day_5",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "server:dev": "nodemon server/server.js",
+    "build": "webpack -w",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "file-system": "^2.2.2",
+    "node-fetch": "^2.2.0",
+    "watson-developer-cloud": "^3.8.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.3",
+    "webpack": "^4.16.5",
+    "webpack-cli": "^3.1.0"
+  }
+}
